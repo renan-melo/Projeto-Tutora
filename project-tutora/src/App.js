@@ -75,12 +75,10 @@ class App extends Component {
     const { form } = this.state;
     return (
       <div className="App">
-        <br />
-        <br />
-        <br />
 
+<div  class="container-fluid pt-5 p-3 mb-2 bg-primary text-white pb-5 shadow-lg" style={{ color:"red" }} >
         <button
-          className="btn btn-success btn-lg"
+          className="btn btn-success btn-lg font-weight-bold text-uppercase"
           onClick={() => {
             this.setState({ form: null, tipoModal: "inserir" });
             this.modalInserir();
@@ -88,12 +86,12 @@ class App extends Component {
         >
           Inserir Usuario
         </button>
+        </div>
 
-        <h1 class="col-12 pt-5">DATA</h1>
+        <h1 class="col pt-5">DATA</h1>
         <h4>The Lorem Ipsumrem Picsum he Lorem Ipsum</h4>
-        <br />
-        <br />
-        <div class="row">
+
+        <div class="row pt-5 px-5">
           <div class="col-6">
             <table className="table">
               <thead>
